@@ -1,0 +1,11 @@
+data
+models
+models_docker
+results
+results_docker
+reports
+samples
+__pycache__
+*.pyc
+.git
+.vscode

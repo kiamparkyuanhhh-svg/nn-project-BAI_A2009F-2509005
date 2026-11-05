@@ -1,0 +1,2 @@
+name,what_changed,epochs,lr,batch,best_epoch,val_loss,val_acc,params
+exp3_lr,Learning rate 3e-4 (docker),30,0.0003,32,30,0.1871,0.9417,106501

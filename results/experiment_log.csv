@@ -1,0 +1,6 @@
+name,what_changed,epochs,lr,batch,best_epoch,val_loss,val_acc,params
+baseline,Baseline,30,0.001,32,26,0.1889,0.9356,106501
+exp1_augment,"Add data augmentation (flip, rotate, brightness/contrast)",30,0.001,32,30,0.2043,0.9279,106501
+exp2_dropout,Dropout 0.3 to 0.5,30,0.001,32,26,0.2044,0.9279,106501
+exp3_lr,Learning rate 1e-3 to 3e-4,30,0.0003,32,30,0.1902,0.9402,106501
+exp4_augment_long,Augmentation with 60 epochs (Exp 1 was still improving at epoch 30),60,0.001,32,54,0.1889,0.9279,106501

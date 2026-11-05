@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+WORKDIR /app
+COPY requirements-test.txt .
+RUN pip install --no-cache-dir -r requirements-test.txt \
+    --extra-index-url https://download.pytorch.org/whl/cpu
+COPY src/model.py src/test.py src/predict.py ./src/
+CMD ["python", "src/test.py", "--model", "exp3_lr"]

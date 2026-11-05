@@ -1,0 +1,7 @@
+data/raw/
+transfer/
+nn-transfer.zip
+__pycache__/
+*.pyc
+.vscode/
+samples/
