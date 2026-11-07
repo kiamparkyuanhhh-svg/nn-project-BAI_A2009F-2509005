@@ -179,7 +179,7 @@ Download "Breeding Place Detection.zip" from the Mendeley link above and unzip i
 
 ## Test in a different environment
 
-TODO (fill in before submission): the test container was run from the Docker Hub image on **<machine / user account>**, hostname **<hostname>**, with the same output as above. Screenshots: `docs/evidence/`.
+The published test image was run in a clean Windows user account (`bernard\cleantest`) on the same physical computer (hostname `bernard`) that was used for training; it is a separate user account, not a separate physical machine. The account has no Python (`python --version` fails) and no project files, only Docker Desktop. The image was pulled from Docker Hub (`bernardkiam/nn-test:v1`, digest `sha256:89069e85fca56e52c47676bb392392ff5f19ab339a57833a54a25b363559fd52`) and run with `data/` and `models/` mounted from a copy of the data. Result: accuracy 0.9402 and macro-F1 0.9282, identical to `results/test_results.json`, and prediction on a new sample worked. Screenshots: `docs/evidence/`.
 
 ## Limitations
 
